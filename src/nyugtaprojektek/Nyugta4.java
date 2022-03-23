@@ -1,4 +1,8 @@
 package nyugtaprojektek;
+
+import java.util.HashMap;
+import java.util.function.BiConsumer;
+
 public class Nyugta4 {
 
     //több metódusnak is látnia kell:
@@ -50,7 +54,7 @@ public class Nyugta4 {
         }
 
         System.out.print(vonal);
-        
+       
         if(sortores){
             System.out.println("");
         }
@@ -78,6 +82,7 @@ public class Nyugta4 {
         erteketKiir("Szervízdíj", szervizDijErteke(szervizDijMertek));
         System.out.printf("(%d%%)\n", szervizDijMertek);
     }
+
 
     private static void eurobanKiir(int fizetendo) {
         double euro = fizetendo / 350.0;
